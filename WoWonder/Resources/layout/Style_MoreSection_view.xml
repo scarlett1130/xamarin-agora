@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/main"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="1dp"
+              android:background="?attr/colorFill"
+              android:foreground="?attr/selectableItemBackground"
+              android:orientation="horizontal"
+              android:padding="15dp"
+              android:gravity="center_vertical">
+  <ImageView 
+    android:id="@+id/Icon"
+    android:layout_width="20dp"
+    android:layout_height="20dp"
+    android:tint="#444444"
+    android:src="@drawable/ic_settings_notifications"/>
+  <TextView
+    android:id="@+id/section_name"
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="15dp"
+    android:textSize="14sp"
+    android:text="@string/Lbl_Notifications"/>
+  <TextView
+    android:id="@+id/icon_arrow"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="10dp"
+    android:text="ic"/> 
+</LinearLayout>

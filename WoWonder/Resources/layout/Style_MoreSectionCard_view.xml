@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:foreground="?attr/selectableItemBackground"
+    android:backgroundTint="#ffffff"
+    android:background="@drawable/buttonflat"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:paddingStart="12dp" >
+   
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+   
+    <ImageView
+      android:id="@+id/Icon"
+      android:layout_width="30dp" 
+      android:layout_height="30dp"
+      android:src="@drawable/no_profile_image_circle"/>
+
+    <TextView
+      android:id="@+id/textCount"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textSize="12sp" 
+      android:gravity="end"
+      android:layout_gravity="end"
+      android:visibility="visible"
+      android:layout_alignParentEnd="true"
+      android:layout_centerVertical="true"
+      android:layout_marginEnd="5dp" />
+
+  </RelativeLayout>
+  
+  <TextView
+    android:id="@+id/section_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:textSize="12sp" 
+    android:text="@string/Lbl_MyProfile"/>
+
+  <TextView
+    android:id="@+id/badge"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2dp"
+    android:textSize="8sp"
+    android:textColor="#a6a6a6"/> 
+  
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:background="@drawable/rounded_dialog"
+    android:layout_height="wrap_content">
+    <!--Head Page -->
+    <RelativeLayout
+        android:id="@+id/mainLayout"
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+        <View
+            android:layout_width="30dp"
+            android:layout_height="2dp"
+            android:layout_centerInParent="true"
+            android:background="#cbcbcb"/>
+    </RelativeLayout>
+	 <!--Distance Section -->
+    <RelativeLayout
+        android:paddingTop="5dp"
+        android:layout_marginTop="6dp"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="85dp">
+        <TextView
+            android:id="@+id/DistanceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:text="@string/Lbl_Distance"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/Distancenumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textSize="12sp"
+            android:layout_marginEnd="27dp" />
+        <SeekBar
+            android:id="@+id/distanceSeeker"
+            android:layout_marginStart="27dp"
+            android:layout_marginEnd="27dp"
+			android:theme="@style/MySeekBar"
+			android:progress="0"
+            android:layout_below="@+id/DistanceTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp" />
+    </RelativeLayout> 
+    <!--Buttons Section -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ApplyButton"
+            android:background="@drawable/follow_button_profile_friends_pressed"
+            android:layout_height="36dp"
+            android:layout_width="match_parent"
+            style="@style/Base.TextAppearance.AppCompat.Body1"
+            android:text="@string/Lbl_ApplyFilter"
+            android:textColor="@color/textLight_color"
+            android:textSize="14sp"
+            android:clickable="true"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+    </RelativeLayout>
+</LinearLayout>

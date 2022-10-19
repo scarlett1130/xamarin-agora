@@ -1,0 +1,167 @@
+{
+  "project_info": {
+    "project_number": "1062311917101",
+    "project_id": "social-networkforconserv-46290",
+    "storage_bucket": "social-networkforconserv-46290.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1062311917101:android:e27df64130eee02ff62aa4",
+        "android_client_info": {
+          "package_name": "com.americafirstpatriot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1062311917101-42qsn8lebeelq3i5spngqct5a45nutue.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.americafirstpatriot",
+            "certificate_hash": "1a32cc3858803bc75ae2ff9b15d28df60112475a"
+          }
+        },
+        {
+          "client_id": "1062311917101-1nu4j8so7qj6qc3kvie8n4nn1r6i9rkn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxRJnCVGqzfxiSRJ74byoXKsV_H-vr_7I"
+        },
+        {
+          "current_key": "AIzaSyARAlXoNxxD3jOg0C4xezG_daFRbvgWWmQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1062311917101-1nu4j8so7qj6qc3kvie8n4nn1r6i9rkn.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1062311917101-c9361n0pkmp20lv9bqrh1uc4f3d4i5ph.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.americafirstpatriot.timeline"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1062311917101:android:4451de3956059947f62aa4",
+        "android_client_info": {
+          "package_name": "com.americafirstpatriot.timeline"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1062311917101-94ftb6h72n7ifda1iuo2urrrcs24naac.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.americafirstpatriot.timeline",
+            "certificate_hash": "be040685f06364282bb7ef9b08125830806a2412"
+          }
+        },
+        {
+          "client_id": "1062311917101-mvl1onom83f0fksev93srkkui9so4lcr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.americafirstpatriot.timeline",
+            "certificate_hash": "6775bca90428b86dbc119f508a61e5de039047c7"
+          }
+        },
+        {
+          "client_id": "1062311917101-q02vott8v0133ni9gin1n2bv2di6uno9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.americafirstpatriot.timeline",
+            "certificate_hash": "7cb29d98f43d39f7c1b0804b3d0254e340fbce49"
+          }
+        },
+        {
+          "client_id": "1062311917101-1nu4j8so7qj6qc3kvie8n4nn1r6i9rkn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxRJnCVGqzfxiSRJ74byoXKsV_H-vr_7I"
+        },
+        {
+          "current_key": "AIzaSyARAlXoNxxD3jOg0C4xezG_daFRbvgWWmQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1062311917101-1nu4j8so7qj6qc3kvie8n4nn1r6i9rkn.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1062311917101-c9361n0pkmp20lv9bqrh1uc4f3d4i5ph.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.americafirstpatriot.timeline"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1062311917101:android:cd063fbe327ba8ebf62aa4",
+        "android_client_info": {
+          "package_name": "com.americafirstpatriot.tl"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1062311917101-kirurosjtonjob6s8o1md440hqdckd7l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.americafirstpatriot.tl",
+            "certificate_hash": "7cb29d98f43d39f7c1b0804b3d0254e340fbce49"
+          }
+        },
+        {
+          "client_id": "1062311917101-1nu4j8so7qj6qc3kvie8n4nn1r6i9rkn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxRJnCVGqzfxiSRJ74byoXKsV_H-vr_7I"
+        },
+        {
+          "current_key": "AIzaSyARAlXoNxxD3jOg0C4xezG_daFRbvgWWmQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1062311917101-1nu4j8so7qj6qc3kvie8n4nn1r6i9rkn.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1062311917101-c9361n0pkmp20lv9bqrh1uc4f3d4i5ph.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.americafirstpatriot.timeline"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

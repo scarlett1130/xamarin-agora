@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+	xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	app:cardBackgroundColor="?attr/colorBubble"
+	app:cardCornerRadius="10dp"
+	app:cardElevation="3dp"
+	app:cardUseCompatPadding="true">
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="250dp" 
+		android:orientation="vertical">
+
+		<ProgressBar
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/progressBar"
+			android:layout_centerInParent="true"
+			android:indeterminate="true"
+			android:gravity="center_horizontal"
+			android:layout_gravity="center_horizontal"
+			android:progressTint="@color/textLight_color" />
+
+		<androidx.recyclerview.widget.RecyclerView
+			android:id="@+id/recyler"
+			android:clickable="true"
+			android:focusable="false"
+			android:focusableInTouchMode="true"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:scrollbars="vertical"
+			android:layoutAnimation="@anim/recyclerview_layout_anim1"  />
+
+	</LinearLayout>
+</androidx.cardview.widget.CardView>

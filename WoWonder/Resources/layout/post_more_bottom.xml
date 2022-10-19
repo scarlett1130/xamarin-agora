@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_more">
+
+    <LinearLayout
+        android:id="@+id/more_save_post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:padding="15dp"
+        android:clickable="true"
+        android:background="?attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:weightSum="3">
+      <ImageView
+        android:id="@+id/iv_save_post"
+        android:layout_width="25dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="5dp"
+        android:src="@drawable/ic_bookmark"/>
+        <TextView
+            android:id="@+id/tv_save_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="@string/Lbl_SavePost" 
+            android:gravity="start|center"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/more_copy_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:padding="15dp"
+        android:clickable="true"
+        android:background="?attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:weightSum="3">
+      <ImageView
+        android:id="@+id/iv_copy_text"
+        android:layout_width="25dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="5dp"
+        android:src="@drawable/ic_copy"  />
+        <TextView
+            android:id="@+id/tv_copy_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="@string/Lbl_CopeText"
+            
+            android:gravity="start|center"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/more_copy_link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:padding="15dp"
+        android:clickable="true"
+        android:background="?attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:weightSum="3">
+      <ImageView
+        android:id="@+id/iv_copy_link"
+        android:layout_width="25dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="5dp"
+        android:src="@drawable/ic_link" />
+        <TextView
+            android:id="@+id/tv_copy_link"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="@string/Lbl_CopeLink"
+            
+            android:gravity="start|center"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/more_hide_post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:padding="15dp"
+        android:clickable="true"
+        android:background="?attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:weightSum="3">
+      <ImageView
+        android:id="@+id/iv_hide_post"
+        android:layout_width="25dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="5dp"
+        android:tint="@color/accent"
+        android:src="@drawable/ic_eye_hide" />
+        <TextView
+            android:id="@+id/tv_hide_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="@string/Lbl_HidePost"
+            android:gravity="start|center"
+            android:textSize="16sp"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/more_report_post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:padding="15dp"
+        android:clickable="true"
+        android:background="?attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:weightSum="3">
+      <ImageView
+        android:id="@+id/iv_report_post"
+        android:layout_width="25dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="5dp"
+        android:src="@drawable/ic_warning"  />
+        <TextView
+            android:id="@+id/tv_report_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="@string/Lbl_ReportPost"
+            
+            android:gravity="start|center"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/more_edit_post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:padding="15dp"
+        android:clickable="true"
+        android:background="?attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:weightSum="3">
+      <ImageView
+        android:id="@+id/iv_edit_post"
+        android:layout_width="25dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="5dp"
+        android:src="@drawable/ic_pen"  />
+        <TextView
+            android:id="@+id/tv_edit_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="@string/Lbl_EditPost"
+            
+            android:gravity="start|center"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/more_boost_post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:padding="15dp"
+        android:clickable="true"
+        android:background="?attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:weightSum="3">
+      <ImageView
+        android:id="@+id/iv_boost_post"
+        android:layout_width="25dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="5dp"
+        android:src="@drawable/ic_trend" />
+        <TextView
+            android:id="@+id/tv_boost_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="@string/Lbl_BoostPost"
+            
+            android:gravity="start|center"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/more_disable_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:padding="15dp"
+        android:clickable="true"
+        android:background="?attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:weightSum="3">
+      <ImageView
+        android:id="@+id/iv_disable_comment"
+        android:layout_width="25dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="5dp"
+        android:src="@drawable/ic_disable" />
+        <TextView
+            android:id="@+id/tv_disable_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="@string/Lbl_DisableComments"
+            
+            android:gravity="start|center"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/more_delete_post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:padding="15dp"
+        android:clickable="true"
+        android:background="?attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:weightSum="3">
+      <ImageView
+        android:id="@+id/iv_delete_post"
+        android:layout_width="25dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="5dp"
+        android:src="@drawable/ic_delete" />
+        <TextView
+            android:id="@+id/tv_delete_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="@string/Lbl_DeletePost"
+            
+            android:gravity="start|center"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:id="@+id/lyt_parent"
+    app:cardBackgroundColor="?attr/colorFill"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/selectableItemBackground"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:riv_corner_radius_top_left="4dp"
+            app:riv_corner_radius_top_right="4dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/imageplacholder" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:textSize="16sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"   />
+
+        <TextView
+            android:id="@+id/play"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_margin="12dp"
+            android:text="@string/Lbl_Play"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:background="@drawable/follow_button_profile_friends_pressed"
+            android:textColor="?attr/colorFill" />
+			 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:ignore="RtlHardcoded"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorBgApp">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/secondAppBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorBgApp"
+        android:fitsSystemWindows="true">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:theme="@style/ToolbarTheme"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:titleTextAppearance="@style/Toolbar.TitleText"
+            android:background="?attr/colorFill"
+            app:layout_collapseMode="pin">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/ic_action_discover"
+                android:id="@+id/toolbar_title" />
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/secondAppBarLayout">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_job"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"/>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <ViewStub
+        android:id="@+id/viewStub"
+        android:inflatedId="@+id/subView"
+        android:layout="@layout/EmptyStateLayout"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:gravity="center" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

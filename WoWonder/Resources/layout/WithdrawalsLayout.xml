@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:background="?attr/colorBgApp">
+  <com.google.android.material.appbar.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar">
+    <androidx.appcompat.widget.Toolbar
+      android:id="@+id/toolbar"
+                app:theme="@style/ToolbarTheme"
+      android:layout_width="match_parent"
+      android:layout_height="48dp"
+      android:layout_gravity="top"
+      app:titleTextAppearance="@style/Toolbar.TitleText"
+      android:background="?attr/colorFill" /> 
+  </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="fill_vertical"
+        android:layout_marginBottom="1dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="fill_vertical"
+            android:background="@drawable/wallet_bg_gradient">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="65dp"
+                android:paddingBottom="65dp"
+                android:orientation="horizontal" 
+                android:gravity="start|center_vertical">
+                <ImageView
+                    android:id="@+id/avatar"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:src="@drawable/no_profile_image_circle"/>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="8dp">
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="@color/textLight_color"/>
+                    <TextView
+                        android:id="@+id/tv_subname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="9sp"
+                        android:textColor="@color/textLight_color"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                      android:id="@+id/myBalance"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                      android:textAppearance="@style/Base.TextAppearance.AppCompat.Display1"
+                      android:textColor="@color/textLight_color"
+                        android:textSize="22sp"
+                        android:textStyle="bold"/>
+                    <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/Lbl_CurrentBalance"
+                      android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                      android:textColor="@color/textLight_color"
+                        android:textSize="11sp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="?attr/colorBgApp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/describe"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/Lbl_Withdrawals"
+                    android:textStyle="bold"
+                    android:textSize="20sp" />
+                <!--Amount Section -->
+                <TextView 
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/description"
+                    android:layout_below="@+id/describe"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/Lbl_ReplenishDesc"
+                    android:textSize="12dp" />
+
+                <!--Withdraw Method Section -->
+                <EditText
+                  android:id="@+id/WithdrawMethodEditText"
+                  style="@style/EditTextNormalStyle"
+                  android:layout_width="match_parent"
+                  android:layout_height="45dp"
+                  android:hint="@string/Lbl_WithdrawMethod"
+                  android:textSize="14sp"
+                  android:gravity="start|center_vertical"
+                  android:paddingStart="16dp"
+                  android:inputType="text"
+                  android:background="@drawable/round_gray_border"
+                  android:layout_marginStart="16dp"
+                  android:layout_marginEnd="16dp"
+                  android:layout_marginTop="13dp" />
+                <!--Amount Section -->
+                <EditText
+                  android:id="@+id/AmountEditText"
+                  style="@style/EditTextNormalStyle"
+                  android:layout_width="match_parent"
+                  android:layout_height="45dp"
+                  android:hint="@string/Lbl_Amount"
+                  android:textSize="14sp"
+                  android:gravity="start|center_vertical"
+                  android:paddingStart="16dp"
+                  android:inputType="number"
+                  android:background="@drawable/round_gray_border"
+                  android:layout_marginStart="16dp"
+                  android:layout_marginEnd="16dp"
+                  android:layout_marginTop="13dp" />
+
+            </LinearLayout>
+           
+          <LinearLayout
+                android:id="@+id/LayoutPayPalEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="?attr/colorBgApp">
+                <!--PayPal Email Section -->
+                <EditText
+                    android:id="@+id/PayPalEmailEditText"
+                    style="@style/EditTextNormalStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:hint="@string/Lbl_PayPalEmail"
+                    android:textSize="14sp"
+                    android:gravity="start|center_vertical"
+                    android:paddingStart="16dp"
+                    android:inputType="textEmailAddress"
+                    android:background="@drawable/round_gray_border"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginTop="13dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/LayoutBank"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone" 
+                android:layout_gravity="fill_vertical"
+                android:background="?attr/colorBgApp">
+                <!--IBAN Section -->
+                <EditText
+                    android:id="@+id/AccountNumberEditText"
+                    style="@style/EditTextNormalStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:hint="@string/Lbl_AccountNumber"
+                    android:textSize="14sp"
+                    android:gravity="start|center_vertical"
+                    android:paddingStart="16dp"
+                    android:inputType="text"
+                    android:background="@drawable/round_gray_border"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginTop="13dp" />
+                <!--Country Section -->
+                <EditText
+                    android:id="@+id/CountryEditText"
+                    style="@style/EditTextNormalStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:hint="@string/Lbl_Country"
+                    android:textSize="14sp"
+                    android:gravity="start|center_vertical"
+                    android:paddingStart="16dp"
+                    android:inputType="text"
+                    android:background="@drawable/round_gray_border"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginTop="13dp" />
+                <!--Account Name Section-->
+                <EditText
+                    android:id="@+id/AccountNameEditText"
+                    style="@style/EditTextNormalStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:hint="@string/Lbl_AccountName"
+                    android:textSize="14sp"
+                    android:gravity="start|center_vertical"
+                    android:paddingStart="16dp"
+                    android:inputType="text"
+                    android:background="@drawable/round_gray_border"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginTop="13dp" />
+                <!--Swift Code Section-->
+                <EditText
+                    android:id="@+id/SwiftCodeEditText"
+                    style="@style/EditTextNormalStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:hint="@string/Lbl_SwiftCode"
+                    android:textSize="14sp"
+                    android:gravity="start|center_vertical"
+                    android:paddingStart="16dp"
+                    android:inputType="text"
+                    android:background="@drawable/round_gray_border"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginTop="13dp" />
+                <!--Address Section-->
+                <EditText
+                    android:id="@+id/AddressEditText"
+                    style="@style/EditTextNormalStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:hint="@string/Lbl_Address"
+                    android:textSize="14sp"
+                    android:gravity="start"
+                    android:paddingStart="16dp"
+                    android:paddingTop="5dp"
+                    android:inputType="text"
+                    android:background="@drawable/round_gray_border"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginTop="13dp" />
+            </LinearLayout>
+            <!--Buttons Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="?attr/colorBgApp">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/RequestWithdrawalButton"
+                    android:background="@drawable/follow_button_profile_friends_pressed"
+                    android:layout_height="40dp"
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    style="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:text="@string/Lbl_RequestWithdrawal"
+                    android:textColor="@color/textLight_color"
+                    android:textSize="14sp"
+                    android:clickable="true"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="25dp"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:textAllCaps="false"/>
+                <View 
+	                android:layout_height="20dp"
+	                android:layout_width="match_parent" />
+                <WoWonder.Helpers.Ads.TemplateView
+	                android:id="@+id/my_template"
+	                android:padding="8dp"
+	                android:visibility="gone"
+	                app:gnt_template_type="@layout/gnt_medium_template_view"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="bottom"
+	                android:layout_alignParentBottom="true"
+	                android:layout_centerHorizontal="true" /> 
+                <View 
+	                android:layout_height="?android:attr/actionBarSize"
+	                android:layout_width="match_parent" /> 
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

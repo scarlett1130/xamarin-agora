@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:padding="30dp">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical">
+    <TextView
+      android:id="@+id/IconSocial"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:src="@drawable/ic_listening"/>
+    <TextView
+      android:id="@+id/TxtSocialName"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="15dp"
+      android:text="@string/Lbl_Listening"
+      android:textSize="16sp"/>
+  </LinearLayout>
+  <EditText
+    android:id="@+id/et_content"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:backgroundTint="@color/accent"
+    android:inputType="text"
+    android:textSize="16sp"
+    android:hint="@string/Lbl_AddSocialLinksName"/>
+  <androidx.appcompat.widget.AppCompatButton
+    android:id="@+id/btn_close"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:layout_gravity="end"
+    android:background="@null"
+    android:text="@string/Lbl_Add"
+    android:textColor="@color/accent"
+    android:textSize="13sp"
+    android:textAllCaps="false"/>
+
+</LinearLayout>

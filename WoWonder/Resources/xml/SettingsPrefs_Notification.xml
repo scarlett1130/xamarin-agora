@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+  <!--Notification SECTION-->
+  <PreferenceCategory android:layout="@layout/preference_category" android:title="@string/Lbl_Message_Notifications"  >
+
+    <WoWonder.Activities.SettingsPreferences.Custom.CustomSwitchPreference
+      android:title="@string/Lbl_Notification_Popup"
+      android:summary="@string/Lbl_Summary_notifications"
+      android:key="notifications_key"
+      app:iconSpaceReserved="false"
+      style="@style/SwitchCompatTheme"
+      android:defaultValue="true" />
+
+    <Preference android:layout="@xml/divider" />
+
+    <WoWonder.Activities.SettingsPreferences.Custom.CustomSwitchPreference
+      android:key="checkBox_PlaySound_key"
+      android:title="@string/Lbl_Conversation_tones"
+      android:summary="@string/Lbl_Summary_Play_sounds"
+      app:iconSpaceReserved="false"
+      style="@style/SwitchCompatTheme"
+      android:defaultValue="true" />
+
+  </PreferenceCategory>
+
+  <!--Notification SECTION-->
+  <PreferenceCategory android:layout="@layout/preference_category" android:title="@string/Lbl_General" >
+
+    <WoWonder.Activities.SettingsPreferences.Custom.CustomCheckBoxPreference
+      android:key="checkBox_e_liked_key"
+      android:title="@string/Lbl_SomeoneLikedMyPosts"
+      app:iconSpaceReserved="false"
+      android:defaultValue="true" />
+
+    <Preference android:layout="@xml/divider" />
+
+    <WoWonder.Activities.SettingsPreferences.Custom.CustomCheckBoxPreference
+      android:key="checkBox_e_commented_key"
+      android:title="@string/Lbl_SomeoneCommentedMyPosts"
+      app:iconSpaceReserved="false"
+      android:defaultValue="true" />
+
+    <Preference android:layout="@xml/divider" />
+
+    <WoWonder.Activities.SettingsPreferences.Custom.CustomCheckBoxPreference
+      android:key="checkBox_e_shared_key"
+      android:title="@string/Lbl_SomeoneSharedMyPosts"
+      app:iconSpaceReserved="false"
+      android:defaultValue="true" />
+
+    <Preference android:layout="@xml/divider" />
+
+    <WoWonder.Activities.SettingsPreferences.Custom.CustomCheckBoxPreference
+      android:key="checkBox_e_followed_key"
+      android:title="@string/Lbl_SomeoneFollowedMe"
+      app:iconSpaceReserved="false"
+      android:defaultValue="true" />
+
+    <Preference android:layout="@xml/divider" />
+
+    <WoWonder.Activities.SettingsPreferences.Custom.CustomCheckBoxPreference
+      android:key="checkBox_e_liked_page_key"
+      android:title="@string/Lbl_SomeoneLikedMyPages"
+      app:iconSpaceReserved="false"
+      android:defaultValue="true" />
+
+    <Preference android:layout="@xml/divider" />
+
+    <WoWonder.Activities.SettingsPreferences.Custom.CustomCheckBoxPreference
+      android:key="checkBox_e_visited_key"
+      android:title="@string/Lbl_SomeoneVisitedMyProfile"
+      app:iconSpaceReserved="false"
+      android:defaultValue="true" />
+
+    <Preference android:layout="@xml/divider" />
+
+    <WoWonder.Activities.SettingsPreferences.Custom.CustomCheckBoxPreference
+      android:key="checkBox_e_mentioned_key"
+      android:title="@string/Lbl_SomeoneMentionedMe"
+      app:iconSpaceReserved="false"
+      android:defaultValue="true" />
+
+    <Preference android:layout="@xml/divider" />
+
+    <WoWonder.Activities.SettingsPreferences.Custom.CustomCheckBoxPreference
+      android:key="checkBox_e_joined_group_key"
+      android:title="@string/Lbl_SomeoneJoinedMyGroups"
+      app:iconSpaceReserved="false"
+      android:defaultValue="true" />
+
+    <Preference android:layout="@xml/divider" />
+
+    <WoWonder.Activities.SettingsPreferences.Custom.CustomCheckBoxPreference
+      android:key="checkBox_e_accepted_key"
+      android:title="@string/Lbl_SomeoneAcceptedMyFriendRequest"
+      app:iconSpaceReserved="false"
+      android:defaultValue="true" />
+
+    <Preference android:layout="@xml/divider" />
+
+    <WoWonder.Activities.SettingsPreferences.Custom.CustomCheckBoxPreference
+      android:key="checkBox_e_profile_wall_post_key"
+      android:title="@string/Lbl_SomeonePostedOnMyTimeline"
+      app:iconSpaceReserved="false"
+      android:defaultValue="true" />
+
+    <Preference android:layout="@xml/divider" />
+
+    <WoWonder.Activities.SettingsPreferences.Custom.CustomCheckBoxPreference
+      android:key="checkBox_e_memory_key"
+      android:title="@string/Lbl_YouHaveRemembranceOnThisDay"
+      app:iconSpaceReserved="false"
+      android:defaultValue="true" />
+
+  </PreferenceCategory>
+
+</PreferenceScreen>

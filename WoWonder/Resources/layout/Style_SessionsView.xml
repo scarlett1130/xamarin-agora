@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginTop="7dp"
+    android:layout_marginBottom="7dp"
+    android:paddingStart="15dp"
+    android:paddingEnd="15dp"
+    android:paddingTop="15dp"
+    android:paddingBottom="30dp"
+    android:elevation="10dp"
+    android:outlineAmbientShadowColor="#444444"
+    android:outlineSpotShadowColor="#444444"
+    android:background="?attr/colorFill">
+    <TextView
+        android:id="@+id/card_pro_pic"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:background="@drawable/circle_white"
+        android:backgroundTint="?attr/colorBgApp"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:textColor="@color/accent"
+        android:text="g"/>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="15dp">
+        <TextView
+            android:id="@+id/card_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/card_Browser"
+            android:layout_marginTop="7dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp" /> 
+        <TextView
+            android:id="@+id/card_Seen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp" /> 
+        <TextView
+            android:id="@+id/card_Address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp" />  
+    </LinearLayout>
+    <at.markushi.ui.CircleButton
+        android:id="@+id/ImageCircle"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:tint="@color/gnt_white"
+        android:src="@drawable/ic_dialog_close_dark"
+        app:cb_color="@color/accent"
+        app:cb_pressedRingWidth="1dp"/>
+</LinearLayout>

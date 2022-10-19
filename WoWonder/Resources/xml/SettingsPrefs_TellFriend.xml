@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+  <!--Privacy SECTION-->
+  <PreferenceCategory android:layout="@xml/divider"></PreferenceCategory>
+  <PreferenceCategory android:layout="@layout/preference_category"  android:key="SectionEarnings_key" android:title="@string/Lbl_Earnings" >
+
+    <WoWonder.Activities.SettingsPreferences.Custom.GeneralCustomPreference
+      android:key="MyAffiliates_key"
+      android:title="@string/Lbl_MyAffiliates"/>
+
+    <WoWonder.Activities.SettingsPreferences.Custom.GeneralCustomPreference
+      android:key="MyBalance_key"
+      android:title="@string/Lbl_MyBalance"/>
+
+    <WoWonder.Activities.SettingsPreferences.Custom.GeneralCustomPreference
+      android:key="MyPoints_key"
+      android:title="@string/Lbl_MyPoints"/>
+
+    <WoWonder.Activities.SettingsPreferences.Custom.GeneralCustomPreference
+      android:key="Withdrawals_key"
+      android:title="@string/Lbl_Withdrawals" />
+
+  </PreferenceCategory>
+
+  <PreferenceCategory android:layout="@xml/divider"></PreferenceCategory>
+  <PreferenceCategory android:layout="@layout/preference_category" android:key="SectionInvite_key" android:title="@string/Lbl_TellFriend">
+
+    <WoWonder.Activities.SettingsPreferences.Custom.GeneralCustomPreference
+      android:key="InviteFriends_key"
+      android:title="@string/Lbl_Invite_Friends"/>
+
+    <WoWonder.Activities.SettingsPreferences.Custom.GeneralCustomPreference
+      android:key="Share_key"
+      android:title="@string/Lbl_Share"
+      android:summary= "@string/Lbl_Summary_Share"/>
+
+
+  </PreferenceCategory>
+
+
+</PreferenceScreen>

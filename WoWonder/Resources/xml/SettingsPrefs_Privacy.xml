@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" >
+  <!--Privacy SECTION-->
+  <PreferenceCategory  android:layout="@layout/preference_category" android:key="Privacy_key" android:title="@string/Lbl_Privacy" android:textSize="14sp" >
+
+    <!--Who can follow me ?-->
+    <WoWonder.Activities.SettingsPreferences.Custom.CustomPreference
+      android:key="whocanfollow_key"
+      android:title="@string/Lbl_Who_can_follow_me"
+      android:defaultValue="@string/Lbl_Everyone"
+      app:iconSpaceReserved="false"/>
+
+    <Preference android:layout="@xml/divider"/>
+
+    <!--Who can message me ?-->
+    <WoWonder.Activities.SettingsPreferences.Custom.CustomPreference
+      android:key="whocanMessage_key"
+      android:title="@string/Lbl_Who_can_message_me"
+      android:defaultValue="@string/Lbl_Everyone"
+      app:iconSpaceReserved="false"/>
+
+    <Preference android:layout="@xml/divider"/>
+
+    <!--Who can see my friends?-->
+    <WoWonder.Activities.SettingsPreferences.Custom.CustomPreference
+        android:key="whoCanSeeMyfriends_key"
+      android:title="@string/Lbl_CanSeeMyfriends"
+      android:defaultValue="@string/Lbl_Everyone"
+         app:iconSpaceReserved="false"/>
+
+    <!--Who can post on my timeline ?-->
+    <Preference android:layout="@xml/divider"/>
+
+    <WoWonder.Activities.SettingsPreferences.Custom.CustomPreference
+      android:key="whoCanPostOnMyTimeline_key"
+       android:title="@string/Lbl_CanPostOnMyTimeline"
+       android:defaultValue="@string/Lbl_Everyone"
+       app:iconSpaceReserved="false"/>
+
+    <Preference android:layout="@xml/divider"/>
+
+    <!--Who can see my birthday?-->
+    <WoWonder.Activities.SettingsPreferences.Custom.CustomPreference
+      android:key="whoCanSeeMyBirthday_key"
+      android:title="@string/Lbl_Who_can_see_my_birthday"
+      android:defaultValue="@string/Lbl_Everyone"
+      app:iconSpaceReserved="false"/>
+
+    <Preference android:layout="@xml/divider"/>
+
+    <!--Confirm request when someone follows you-->
+    <WoWonder.Activities.SettingsPreferences.Custom.CustomSwitchPreference
+      android:title="@string/Lbl_ConfirmRequestFollows"
+      android:summary="@string/Lbl_Summary_ConfirmRequestFollows"
+      android:key="ConfirmRequestFollows_key"
+      app:iconSpaceReserved="false"
+      style="@style/SwitchCompatTheme"
+      android:defaultValue="false" />
+
+    <Preference android:layout="@xml/divider"/>
+
+    <!--Show my activities-->
+    <WoWonder.Activities.SettingsPreferences.Custom.CustomSwitchPreference
+      android:title="@string/Lbl_ShowMyActivities"
+      android:key="ShowMyActivities_key"
+      app:iconSpaceReserved="false"
+      style="@style/SwitchCompatTheme"
+      android:defaultValue="true" />
+
+    <Preference android:layout="@xml/divider"/>
+
+    <!--Status-->
+    <WoWonder.Activities.SettingsPreferences.Custom.CustomSwitchPreference
+      android:title="@string/Lbl_ShowOnlineUsers"
+       android:summary="@string/Lbl_Summary_OnlineUsers"
+       android:key="onlineUser_key"
+       app:iconSpaceReserved="false"
+       style="@style/SwitchCompatTheme"
+       android:defaultValue="true" />
+
+    <Preference android:layout="@xml/divider"/>
+
+    <!--Share my location with public-->
+    <WoWonder.Activities.SettingsPreferences.Custom.CustomSwitchPreference
+      android:title="@string/Lbl_ShareMyLocation"
+      android:key="ShareMyLocation_key"
+      app:iconSpaceReserved="false"
+      style="@style/SwitchCompatTheme"
+      android:defaultValue="true" />
+
+  </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingStart="5dp"
+    android:paddingTop="10dp"
+    android:paddingEnd="10dp"
+    android:paddingBottom="10dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/center_content_profile_scroll_over">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/PageImage"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            app:riv_corner_radius_top_left="4dp"
+            app:riv_corner_radius_top_right="4dp"/>
+         
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/Page_Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                />
+            <TextView
+                android:id="@+id/Page_Notifications"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:textSize="13sp"
+                />
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_below="@+id/llPage"
+                android:id="@+id/cont"
+                android:textSize="16sp"
+                android:background="@drawable/follow_button_profile_friends"
+                android:tag="false"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:text="@string/Btn_Like"
+                android:textColor="@color/accent" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

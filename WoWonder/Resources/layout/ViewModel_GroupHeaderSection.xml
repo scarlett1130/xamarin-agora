@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/profile_layout"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+  <LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="20dp"
+		android:layout_marginStart="16dp"
+		android:layout_marginEnd="16dp"
+		android:orientation="horizontal"
+		android:gravity="start|center_vertical">
+		<RelativeLayout
+			android:layout_width="48dp"
+			android:layout_height="48dp">
+			<ImageView
+				android:id="@+id/image_profile"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:src="@drawable/default_group" />
+			<RelativeLayout
+				android:id="@+id/LinearEdit"
+				android:layout_width="12dp"
+				android:layout_height="12dp"
+				android:layout_alignParentBottom="true"
+				android:layout_alignParentEnd="true"
+				android:visibility="invisible">
+				<Refractored.Controls.CircleImageView
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					app:civ_border_width="1dp"
+					app:civ_border_color="@color/gnt_white"
+					android:src="@color/accent"/>
+				<ImageView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_margin="3dp"
+					android:src="@drawable/ic_edit_mini"/>
+			</RelativeLayout>
+		</RelativeLayout>
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="12dp"
+			android:orientation="vertical">
+			<TextView
+				android:id="@+id/Group_name"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="@color/textLight_color"
+				android:textSize="22sp"
+				android:textStyle="bold" />
+			<TextView
+				android:id="@+id/Group_Username"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="@color/textLight_color"
+				android:textSize="13sp" />
+		</LinearLayout>
+	</LinearLayout>
+
+	<androidx.cardview.widget.CardView
+		android:id="@+id/joinButton"
+		android:layout_width="match_parent"
+		android:foreground="?android:attr/selectableItemBackground"
+		android:layout_height="40dp"
+		android:layout_marginTop="15dp"
+		android:layout_marginBottom="20dp"
+		android:layout_marginStart="16dp"
+		android:layout_marginEnd="16dp"
+		app:cardElevation="10dp"
+		app:cardCornerRadius="5dp"
+		app:cardBackgroundColor="@color/accent"
+		android:outlineAmbientShadowColor="@color/accent"
+		android:outlineSpotShadowColor="@color/accent">
+		<TextView
+			android:id="@+id/joinTxt"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:textSize="14sp"
+			android:textColor="@color/gnt_white"
+			android:text="@string/Btn_Join_Group"/>
+	</androidx.cardview.widget.CardView>
+
+</LinearLayout>

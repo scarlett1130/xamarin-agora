@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="3dp"
+    android:layout_width="3dp">
+  <item>
+    <shape
+        android:innerRadius="0dp"
+        android:shape="ring"
+        android:thickness="3dp"
+        android:useLevel="false">
+      <solid android:color="@color/divider"/>
+    </shape>
+  </item>
+</layer-list>

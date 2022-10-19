@@ -1,0 +1,296 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <ImageButton
+            android:id="@+id/ib_back"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="15dp"
+            android:background="@null"
+            android:src="@drawable/ic_cancel"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/accent"
+            android:text="@string/Lbl_FilterResult"
+            android:layout_marginStart="25dp"/>
+    </LinearLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header"
+        android:layout_above="@id/footer">
+        <LinearLayout
+            android:orientation="vertical"
+            android:fitsSystemWindows="true"
+            android:layout_width="match_parent"
+            android:background="@drawable/rounded_dialog"
+            android:layout_height="wrap_content"
+            android:gravity="bottom">
+            <!--Gender Section -->
+            <RelativeLayout
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+       
+                <TextView
+                    android:layout_marginStart="4dp"
+                    android:id="@+id/GenderTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Lbl_Gender"
+                    android:textSize="16sp"/>
+                <androidx.recyclerview.widget.RecyclerView
+                  android:id="@+id/GenderRecyler"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_centerInParent="true"
+                  android:layout_gravity="center"
+                  android:gravity="center"
+                  android:layout_below="@+id/GenderTextView"
+                  android:orientation="horizontal"
+                  tools:listitem="@layout/Style_Categories_View"
+                  android:layout_marginTop="10dp"
+                  /> 
+            </RelativeLayout>
+	        <!--Age Section -->
+            <RelativeLayout
+                android:id="@+id/LayoutAge"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+		        android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+       
+                <TextView
+                    android:layout_marginStart="5dp"
+                    android:id="@+id/AgeTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Lbl_Age"
+                    android:textSize="16sp"  />
+               <Switch
+                    android:id="@+id/togglebutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:layout_marginTop="0dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="20dp" /> 
+                <LinearLayout
+                    android:id="@+id/seekbarLayout"
+                    android:layout_below="@+id/togglebutton"
+                    android:layout_marginTop="30dp"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <WoWonder.Library.RangeSlider.RangeSliderControl
+                        android:id="@+id/seekbar" 
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginEnd="25dp"
+                        android:layout_marginTop="2dp"
+                        app:absoluteMinValue="10"
+                        app:absoluteMaxValue="70"
+                        app:valuesAboveThumbs="true"
+                        app:materialUI="true" 
+                        app:textAboveThumbsColor="@color/accent"
+                        app:thumbShadowColor="@color/accent"
+                        app:activeColor="@color/accent"
+                        app:minThumbHidden="false"
+                        app:maxThumbHidden="false"
+                        app:showRangeLabels="true"
+                        app:barHeight="2dp"  /> 
+
+                </LinearLayout>
+		 
+            </RelativeLayout>	 
+	         <!--Location Section -->
+            <RelativeLayout
+                android:id="@+id/LayoutLocation"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="28dp"
+                android:paddingEnd="23dp"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp">
+      
+                <TextView
+                    android:id="@+id/LocationTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/Lbl_Location"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/LocationPlace"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:textSize="16sp"
+			        android:text="@string/Lbl_All"
+                    android:layout_marginEnd="40dp"
+                    android:textColor="@drawable/text_selector"/>
+                <ImageView
+                    android:id="@+id/LocationMoreIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/material_ic_keyboard_arrow_right_black_24dp"/>
+            </RelativeLayout>
+	        <!--Verified Section -->
+            <RelativeLayout
+                android:id="@+id/LayoutVerified"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="28dp"
+                android:paddingEnd="23dp"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp">
+       
+                <TextView
+                    android:id="@+id/VerifiedTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/Lbl_Verified"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/textVerified"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:textSize="16sp"
+			        android:text="@string/Lbl_All"
+                    android:layout_marginEnd="40dp"
+                    android:textColor="@drawable/text_selector" />
+                <ImageView
+                    android:id="@+id/LocationMoreIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/material_ic_keyboard_arrow_right_black_24dp"/>
+            </RelativeLayout>
+	        <!--Status Section -->
+            <RelativeLayout
+                android:id="@+id/LayoutStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="28dp"
+                android:paddingEnd="23dp"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp">
+       
+                <TextView
+                    android:id="@+id/StatusTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/Lbl_Status"
+                    android:textSize="16sp"/>
+                <TextView
+                    android:id="@+id/textStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:textSize="16sp"
+			        android:text="@string/Lbl_All"
+                    android:layout_marginEnd="40dp"
+                    android:textColor="@drawable/text_selector" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/material_ic_keyboard_arrow_right_black_24dp"/>
+            </RelativeLayout>
+	        <!--Profile Picture Section -->
+           <RelativeLayout
+                android:id="@+id/LayoutProfilePicture"
+                android:paddingStart="28dp"
+                android:paddingEnd="23dp"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+       
+                <TextView
+                    android:id="@+id/ProfilePictureTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/Lbl_Profile_Picture"
+                    android:textSize="16sp"  />
+                <TextView
+                    android:id="@+id/txtProfilePicture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:textSize="16sp"
+			        android:text="@string/Lbl_All"
+                    android:layout_marginEnd="40dp"
+                    android:textColor="@drawable/text_selector" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/material_ic_keyboard_arrow_right_black_24dp"/>
+            </RelativeLayout> 
+            <!--Buttons Section -->
+            <LinearLayout
+              android:id="@+id/footer"
+              android:paddingTop="13dp"
+              android:paddingBottom="13dp"
+              android:paddingStart="20dp"
+              android:paddingEnd="20dp"
+              android:layout_marginTop="20dp" 
+              android:layout_alignParentBottom="true"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:gravity="start|center_vertical">
+              <TextView
+                android:id="@+id/Clearbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Lbl_Clear"
+                android:textSize="16sp"
+                android:textColor="@drawable/text_selector"
+                android:layout_marginEnd="30dp" />
+              <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/ApplyButton"
+                android:background="@drawable/round_button_pressed"
+                android:layout_height="40dp"
+                android:layout_width="match_parent"
+                style="@style/Base.TextAppearance.AppCompat.Body1"
+                android:text="@string/Lbl_ApplyFilter"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:clickable="true"
+                android:gravity="center"
+                android:textAllCaps="false"/>
+            </LinearLayout>  
+            <View  
+              android:layout_height="?android:attr/actionBarSize"
+              android:layout_width="match_parent" /> 
+        </LinearLayout>    
+    </androidx.core.widget.NestedScrollView>  
+</RelativeLayout> 

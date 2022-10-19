@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" >
+  <!--PROFILE SECTION-->
+  <PreferenceCategory android:layout="@layout/preference_category"  android:key="SectionAccount_key"  android:title="@string/Lbl_General" >
+
+    <WoWonder.Activities.SettingsPreferences.Custom.GeneralCustomPreference
+        android:key="editprofile_key"
+        android:title="@string/Lbl_Edit_Profile_and_avatar"/>
+
+    <WoWonder.Activities.SettingsPreferences.Custom.GeneralCustomPreference
+      android:key="about_me_key"
+      android:title="@string/Lbl_About" />
+
+    <WoWonder.Activities.SettingsPreferences.Custom.GeneralCustomPreference
+      android:key="editAccount_key"
+      android:title="@string/Lbl_My_Account" />
+
+    <WoWonder.Activities.SettingsPreferences.Custom.GeneralCustomPreference
+      android:key="editSocialLinks_key"
+      android:title="@string/Lbl_SocialLinks" />
+
+    <WoWonder.Activities.SettingsPreferences.Custom.GeneralCustomPreference
+      android:key="blocked_key"
+      android:title="@string/Lbl_BlockedUsers" />
+
+    <WoWonder.Activities.SettingsPreferences.Custom.GeneralCustomPreference
+      android:key="verification_key"
+      android:title="@string/Lbl_Verification" />
+
+  </PreferenceCategory>
+
+  <PreferenceCategory android:layout="@layout/preference_category"  android:key="Theme_key" android:title="@string/Lbl_Display" >
+    <WoWonder.Activities.SettingsPreferences.Custom.GeneralCustomPreference
+      android:key="Night_Mode_key"
+      android:title="@string/Lbl_Theme" />
+  </PreferenceCategory>
+
+  <PreferenceCategory  android:layout="@layout/preference_category"  android:key="SecurityAccount_key"  android:title="@string/Lbl_Security" >
+
+    <WoWonder.Activities.SettingsPreferences.Custom.GeneralCustomPreference
+      android:key="editpassword_key"
+      android:title="@string/Lbl_Password"
+      android:summary="@string/Lbl_Change_your_password" />
+
+    <WoWonder.Activities.SettingsPreferences.Custom.GeneralCustomPreference
+      android:key="Twofactor_key"
+      android:title="@string/Lbl_TwoFactor"  />
+
+    <WoWonder.Activities.SettingsPreferences.Custom.GeneralCustomPreference
+      android:key="ManageSessions_key"
+      android:title="@string/Lbl_ManageSessions"  />
+
+    <WoWonder.Activities.SettingsPreferences.Custom.GeneralCustomPreference
+      android:key="deleteaccount_key"
+      android:title="@string/Lbl_DeleteAccount" />
+
+  </PreferenceCategory>
+
+
+  <!--GENERAL SECTION-->
+  <!--<PreferenceCategory android:layout="@xml/divider"/>-->
+  <!--<PreferenceCategory  android:key="category_General" android:title="@string/Lbl_General" >
+    <ListPreference
+      android:key="Lang_key"
+      android:title="@string/Lbl_Language"
+      android:defaultValue="English"
+      android:entries="@array/Lang_array"
+      android:entryValues="@array/Langunicode_array"
+      android:summary="@string/Lbl_Display_your_app_Language"
+      android:icon="@drawable/ic_translation_settings"
+      android:dialogIcon="@drawable/ic_translation_settings" />
+      
+  </PreferenceCategory>-->
+
+</PreferenceScreen>
